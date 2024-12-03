@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #d79909; 
+    padding: 15px 0; 
+}
+
+.titulo-principal { 
+    font-size: 2.3em; 
+    color: #333; 
+    margin: 15px 0;
+}
+
+.escenario { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    margin: 25px;
+    padding: 15px;
+    gap: 10px; 
+    border: 3px dotted #555;
+    min-height: 180px; 
+}
+
+.boton-color {
+    width: 50px; 
+    height: 50px;
+    margin: 0; 
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.boton-color:hover { 
+    transform: scale(1.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.disco-rotante { 
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle, #111 40%, #444 60%, #777 100%);
+    border-radius: 50%;
+    margin: 25px auto;
+    animation: rotacion 6s linear infinite; 
+    display: none; 
+}
+
+@keyframes rotacion { 
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#disco {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #000 40%, #333 60%, #666 100%);
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: girar 5s linear infinite; 
+    display: none; 
+}
+
+.escenario { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    margin: 25px;
+    padding: 15px;
+    gap: 10px; 
+    border: 3px dotted #555; 
+    min-height: 180px; 
+}
+#pista-de-baile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 5px;
+    border: 2px  dashed black;
+    min-height: 150px;
+}
+
